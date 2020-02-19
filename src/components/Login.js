@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -61,9 +61,9 @@ const Login = (props) => {
 					>
 						Submit
 					</Button>
-					<Button variant="dark" href="/moviesFrontend/signup">
-						Sign Up
-					</Button>
+					<Link to="/signup">
+						<Button variant="dark">Sign Up</Button>
+					</Link>
 					{error && <h3 style={{ color: 'red' }}>{error}</h3>}
 				</Container>
 			</Form>
