@@ -27,7 +27,9 @@ const Movie = (props) => {
 
 	const postRating = () => {
 		const ratingInfo = { rating, createdBy: localStorage.id };
-		axios.post(url + '/rating', ratingInfo);
+		axios
+			.post(url + '/rating', ratingInfo)
+			.then((res) => props.history.push(`/movie/${movieData.movie._id}`));
 	};
 	const deleteMovie = () => {
 		axios.delete(url).then((res) => props.history.push('/'));
@@ -35,10 +37,12 @@ const Movie = (props) => {
 
 	const editRating = () => {
 		const ratingInfo = { rating, createdBy: localStorage.id };
-		axios.put(
-			`https://cinopsis.herokuapp.com/api/rating/${usersRating._id}`,
-			ratingInfo
-		);
+		axios
+			.put(
+				`https://cinopsis.herokuapp.com/api/rating/${usersRating._id}`,
+				ratingInfo
+			)
+			.then((res) => props.history.push(`/movie/${movieData.movie._id}`));
 	};
 
 	return (
@@ -117,6 +121,7 @@ const Movie = (props) => {
 
 								<Button
 									onClick={(evt) => {
+										evt.preventDefault();
 										editRating();
 									}}
 									variant="primary"
@@ -129,6 +134,7 @@ const Movie = (props) => {
 						{loggedInBool && (
 							<Button
 								onClick={(evt) => {
+									evt.preventDefault();
 									postRating();
 								}}
 								variant="primary"
