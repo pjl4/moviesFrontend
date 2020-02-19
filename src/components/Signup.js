@@ -64,8 +64,6 @@ const Login = (props) => {
 					onClick={(evt) => {
 						evt.preventDefault();
 						getInfoAndValidate();
-
-						console.log(credentials);
 					}}
 					variant="primary"
 					type="submit"

@@ -61,7 +61,7 @@ const Login = (props) => {
 					>
 						Submit
 					</Button>
-					<Button variant="dark" href="/signup">
+					<Button variant="dark" href="/moviesFrontend/signup">
 						Sign Up
 					</Button>
 					{error && <h3 style={{ color: 'red' }}>{error}</h3>}

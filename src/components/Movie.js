@@ -11,6 +11,7 @@ const Movie = (props) => {
 	const [movieData, setMovieData] = useState();
 	const [rating, setRating] = useState(0);
 	const [usersRating, setUsersRating] = useState();
+	const [loggedInBool, setloggedInBool] = useState();
 
 	useEffect(() => {
 		axios.get(url).then((res) => {
@@ -18,6 +19,8 @@ const Movie = (props) => {
 			let temp = res.data.movie.ratings.find(
 				(rating) => localStorage.id === rating.createdBy
 			);
+			let bool = localStorage.id && !usersRating;
+			setloggedInBool(bool);
 			setUsersRating(temp);
 		});
 	}, [url, usersRating]);
@@ -62,7 +65,7 @@ const Movie = (props) => {
 					<h4>Synopsis</h4>
 					<p>{movieData.movie.synopsis}</p>
 					<Form>
-						{!usersRating && (
+						{loggedInBool && (
 							<Form.Group controlId="exampleForm.ControlSelect1">
 								<Form.Label>Rate Movie</Form.Label>
 								<Form.Control
@@ -123,7 +126,7 @@ const Movie = (props) => {
 								</Button>
 							</div>
 						)}
-						{!usersRating && (
+						{loggedInBool && (
 							<Button
 								onClick={(evt) => {
 									postRating();
@@ -134,7 +137,7 @@ const Movie = (props) => {
 								Submit Rating
 							</Button>
 						)}
-
+						{!loggedInBool && <p>Log in to rate this movie.</p>}
 						{localStorage.id === movieData.movie.createdBy && (
 							<Button
 								onClick={(evt) => {

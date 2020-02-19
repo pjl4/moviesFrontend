@@ -25,8 +25,11 @@ const App = () => {
 					<Route exact path="/login" component={Login} />
 					<Route exact path="/signup" component={Signup} />
 					<Route exact path="/genre/:genre" component={ViewAll} />
-					<Route exact path="/user/:id" component={User} />
-					<User />
+					<Route
+						exact
+						path="/user/:id"
+						render={(routerProps) => <User match={routerProps} />}
+					></Route>
 				</Switch>
 			</main>
 		</div>

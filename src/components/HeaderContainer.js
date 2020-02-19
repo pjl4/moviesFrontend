@@ -24,10 +24,9 @@ const HeaderContainer = (props) => {
 					<div>
 						<h3>Signed in as: {localStorage.username}</h3>
 						<Button
-							href="/"
+							href="/moviesFrontend"
 							onClick={() => {
 								localStorage.clear();
-								console.log('logging out');
 							}}
 						>
 							Logout

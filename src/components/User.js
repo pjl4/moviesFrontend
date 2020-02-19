@@ -5,14 +5,12 @@ const axios = require('axios');
 
 const User = (props) => {
 	const [userData, setUserData] = useState();
-
+	const url = `https://cinopsis.herokuapp.com/api/user/${props.match.match.params.id}`;
 	useEffect(() => {
-		const url = `https://cinopsis.herokuapp.com/api/user/${props.match.params.id}`;
 		axios.get(url).then((res) => {
-			console.log(res.data);
 			setUserData(res.data);
 		});
-	}, [props.match.params.id]);
+	}, [url]);
 
 	return (
 		<div>
