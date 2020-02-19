@@ -56,7 +56,7 @@ ul {
   display: flex;
   justify-content: space-evenly;
   border-bottom: 1px solid goldenrod;
-  padding-top: 4%
+  padding-top: 4%;
 }
 .homeMain {
   height: 100vh;
@@ -68,21 +68,4 @@ ul {
   padding-top: 8%;
   margin: auto;
   width: 24%;
-}
-
-.title-submit {
-  width: 32%;
-  padding-left: 8%;
-  padding-top: 4%;
-}
-
-.synopsis-submit {
-  width: 56%;
-  padding-left: 8%;
-  padding-top: 1%;
-}
-
-.submission-button {
-  margin-left: 8%;
-  width: 8%;
 }

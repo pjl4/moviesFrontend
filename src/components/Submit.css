@@ -1,0 +1,29 @@
+.title-submit {
+  width: 28%;
+  padding-top: 4%;
+}
+
+.form-group .genre-submit {
+  width: fit-content;
+}
+
+.synopsis-submit {
+  width: 56%;
+}
+.form-group button,
+.submitForm {
+  text-transform: uppercase;
+}
+
+.form-group button {
+  width: fit-content;
+  color: whitesmoke;
+  font-weight: 800;
+  margin: 1% 0;
+}
+
+.submitForm {
+  padding-left: 8%;
+  color: goldenrod;
+  font-family: 'Zilla Slab', serif;
+}
