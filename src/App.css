@@ -1,90 +1,101 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Zilla+Slab:300,400,500,700&display=swap');
+
 body {
-  background-image: linear-gradient(-0.9turn, rgb(34, 33, 33), 95%, white);
-  background-repeat: no-repeat;
-  background-color: black;
+  margin: 0;
+  padding: 0;
+   background-image: linear-gradient(-0.9turn, #222121, 95%, white);
+   background-repeat: no-repeat;
+   background-color: black;
+   height: 125vh;
 }
 a {
-  text-decoration: none;
-  color: whitesmoke;
+   text-decoration: none;
+   color: whitesmoke;
 }
 a:hover {
-  text-decoration: none;
-  color: goldenrod;
+   text-decoration: none;
+   color: goldenrod;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Zilla Slab', serif;
-  color: whitesmoke;
+   font-family: 'Zilla Slab', serif;
+   color: whitesmoke;
 }
 
 span {
-  font-family: 'Zilla Slab', serif;
-  color: whitesmoke;
+   font-family: 'Zilla Slab', serif;
+   color: whitesmoke;
 }
 .appMain {
-  padding-left: 8%;
-  height: 90vh;
+   padding-left: 8%;
+   height: 90vh;
 }
 
 .loginButtons {
-  font-family: 'Zilla Slab', serif;
-  display: flex;
+   font-family: 'Zilla Slab', serif;
+   display: flex;
 }
-
-
-
 
 .headerButton p {
-  padding-left: 1%;
-  display: block;
+   padding-left: 1%;
+   display: block;
 }
 .headerButton {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 2%;
+   display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 2%;
 }
 
-
 .login-form {
-  padding-top: 8%;
-  margin: auto;
-  width: 24%;
+   padding-top: 8%;
+   margin: auto;
+   width: 24%;
 }
 
 @media (max-width: 600px) {
-  .synopsis-submit {
-    width: 100%;
+   .synopsis-submit {
+      width: 100%;
+   }
+   .movieInfo {
+      padding-right: 4%;
+   }
+
+   .ofTheDay {
+      width: 90vw;
+   }
+
+   .homeMain {
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+   }
+
+   .sideNote {
+      width: 90vw;
+      border: none;
+   }
+   .homeList {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .container {
+     flex-direction: column
+   }
+  .navbar {
+    flex-direction: column
   }
-  .movieInfo {
-    padding-right: 4%;
+    .login-form {
+      width: 80vw;
+    }  
+
+  .body {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
   }
-
-  .ofTheDay {
-    width: 90vw;
-  }
-
- 
-    .homeMain {
-   height: 80vh;
-   display: flex;
-   justify-content: space-between;
-   flex-direction: column;
-   
-}
-
-.sideNote {
-  width: 90vw;
-  border: none;
-}
-.homeList {
-   display: grid;
-   grid-template-columns: 1fr;
-   
-}
-
-  
-  /* nav-bar should become a dropdown */
+   /* nav-bar should become a dropdown */
 }

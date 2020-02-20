@@ -1,5 +1,4 @@
 .homeMain {
-   height: 100vh;
    display: flex;
    justify-content: space-between;
 
@@ -8,7 +7,6 @@
    border-left: 1px solid goldenrod;
    border-right: 1px solid goldenrod;
    width: 35vw;
-   height: 80vh;
    font-family: 'Zilla Slab', serif;
   color: whitesmoke;
   font-size: 1.2rem;
@@ -26,14 +24,14 @@ p {
    border-top: 4px solid rgba(218, 165, 32, 0.4);
    border-left: 4px solid rgba(218, 165, 32, 0.4);
    border-radius: 16px;
-   background-color: rgb(218, 165, 32);
+   background-color: #daa520;
    background-clip: padding-box;
    width: 50vw;
 }
 
 .ofTheDayHead {
    margin: 2% 2% 0 2%;
-   border-bottom: 4px solid goldenrod;
+   border-bottom: 4px solid #daa520;
    color: rgb(31, 30, 30);
 }
 .randomSyn {

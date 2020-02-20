@@ -15,7 +15,6 @@ const Movie = props => {
   const [loggedInBool, setloggedInBool] = useState();
 
   useEffect(() => {
-    console.log('props', props.match.params.id)
     axios.get(url).then(res => {
       setMovieData(res.data);
       let temp = res.data.movie.ratings.find(
@@ -115,10 +114,11 @@ const Movie = props => {
                       evt.preventDefault()
                       editRating();
                     }}
+                    className='editRating'
                     variant="warning"
                     type="submit"
                   >
-                    Edit Rating
+                    <span className='editButton'>EDIT RATING</span>
                   </Button>
                 </Form.Group>
               </div>
@@ -133,21 +133,21 @@ const Movie = props => {
                 className="submitRating"
                 type="submit"
               >
-                Submit Rating
+                <span>SUBMIT RATING</span>
               </Button>
             )}
             {!localStorage.id && (
               <p className="notification">Log in to rate this movie.</p>
             )}
             {localStorage.id === movieData.movie.createdBy && (
-              <Button
+              <Button variant='secondary'
                 onClick={evt => {
                   evt.preventDefault();
                   deleteMovie();
                 }}
                 type="submit"
               >
-                Delete Movie
+                <span>DELETE MOVIE</span>
               </Button>
             )}
           </Form>

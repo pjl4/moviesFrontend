@@ -48,7 +48,7 @@ const HeaderContainer = props => {
               }}
               variant="warning"
             >
-              Logout
+              <span className='logout'>LOGOUT</span>
             </Button>
           )}
         </Container>

@@ -3,7 +3,11 @@
   border-bottom: 0.1rem solid goldenrod;
 }
 
-.headRow {
+.logout {
+  color: black;
+}
+
+/* .headRow {
     padding-top: 150%;
     
-}
+} */

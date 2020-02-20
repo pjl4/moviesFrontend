@@ -20,9 +20,12 @@
   /* font-family: 'Zilla Slab', serif; */
 }
 
-.submitRating {
+.submitRating, .editRating{
   display: inline;
   text-transform: uppercase;
-  font-weight: bold;
   font-family: 'Zilla Slab', serif;
+}
+
+.editRating{
+  font-weight: 100;
 }
