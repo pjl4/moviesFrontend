@@ -38,7 +38,7 @@ const Login = (props) => {
 					onChange={(evt) => setEmail(evt.target.value)}
 					controlId="formBasicEmail"
 				>
-					<Form.Label>Email address</Form.Label>
+					<Form.Label><span>Email:</span></Form.Label>
 					<Form.Control type="email" placeholder="Enter email" />
 					<Form.Text className="text-muted"></Form.Text>
 				</Form.Group>
@@ -47,25 +47,25 @@ const Login = (props) => {
 					onChange={(evt) => setPassword(evt.target.value)}
 					controlId="formBasicPassword"
 				>
-					<Form.Label>Password</Form.Label>
-					<Form.Control type="password" placeholder="Password" />
+					<Form.Label><span>Password:</span></Form.Label>
+					<Form.Control type="password" placeholder="Enter password" />
 				</Form.Group>
-				<Container>
+				<div className='loginButtons'>
 					<Button
 						onClick={(evt) => {
 							evt.preventDefault();
 							getInfoAndValidate();
 						}}
-						variant="primary"
+						variant="warning"
 						type="submit"
 					>
-						Submit
+						LOGIN
 					</Button>
 					<Link to="/signup">
-						<Button variant="dark">Sign Up</Button>
+						<Button className='signButton' variant="secondary">SIGN UP</Button>
 					</Link>
 					{error && <h3 style={{ color: 'red' }}>{error}</h3>}
-				</Container>
+				</div>
 			</Form>
 		</div>
 	);

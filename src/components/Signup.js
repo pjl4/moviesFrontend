@@ -40,15 +40,15 @@ const Login = (props) => {
 					onChange={(evt) => setUsername(evt.target.value)}
 					controlId="formBasicText"
 				>
-					<Form.Label>Username</Form.Label>
-					<Form.Control type="text" placeholder="Enter username" />
+					<Form.Label><span>Username:</span></Form.Label>
+					<Form.Control type="text" placeholder="Choose a username" />
 					<Form.Text className="text-muted"></Form.Text>
 				</Form.Group>
 				<Form.Group
 					onChange={(evt) => setEmail(evt.target.value)}
 					controlId="formBasicEmail"
 				>
-					<Form.Label>Email address</Form.Label>
+					<Form.Label><span>Email:</span></Form.Label>
 					<Form.Control type="email" placeholder="Enter email" />
 					<Form.Text className="text-muted"></Form.Text>
 				</Form.Group>
@@ -57,7 +57,7 @@ const Login = (props) => {
 					onChange={(evt) => setPassword(evt.target.value)}
 					controlId="formBasicPassword"
 				>
-					<Form.Label>Password</Form.Label>
+					<Form.Label><span>Password</span></Form.Label>
 					<Form.Control type="password" placeholder="Password" />
 				</Form.Group>
 				<Button
@@ -65,10 +65,10 @@ const Login = (props) => {
 						evt.preventDefault();
 						getInfoAndValidate();
 					}}
-					variant="primary"
+					variant="secondary"
 					type="submit"
 				>
-					Sign up
+					<span>SIGN UP</span>
 				</Button>
 				{error && <h3 style={{ color: 'red' }}>{error}</h3>}
 			</Form>

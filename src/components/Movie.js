@@ -24,7 +24,11 @@ const Movie = props => {
       setloggedInBool(bool);
       setUsersRating(temp);
     });
-  }, [url, usersRating]);
+
+    // return function cleanup() {
+    //   movieData
+    // };
+  }, [movieData]);
 
   const postRating = () => {
     const ratingInfo = { rating, createdBy: localStorage.id };
@@ -39,7 +43,7 @@ const Movie = props => {
     axios.put(
       `https://cinopsis.herokuapp.com/api/rating/${usersRating._id}`,
       ratingInfo
-    );
+    )
   };
 
   return (
@@ -62,7 +66,7 @@ const Movie = props => {
           <Form>
             {loggedInBool && (
               <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Label>Rate Movie</Form.Label>
+                <Form.Label><span>Rate Movie:</span></Form.Label>
                 <Form.Control
                   onChange={evt => setRating(evt.target.value)}
                   className="genre-submit"
@@ -107,6 +111,7 @@ const Movie = props => {
 
                   <Button
                     onClick={evt => {
+                      evt.preventDefault()
                       editRating();
                     }}
                     variant="warning"
@@ -120,6 +125,7 @@ const Movie = props => {
             {loggedInBool && (
               <Button
                 onClick={evt => {
+                  evt.preventDefault();
                   postRating();
                 }}
                 variant="warning"
@@ -129,7 +135,7 @@ const Movie = props => {
                 Submit Rating
               </Button>
             )}
-            {!loggedInBool && (
+            {!localStorage.id && (
               <p className="notification">Log in to rate this movie.</p>
             )}
             {localStorage.id === movieData.movie.createdBy && (
