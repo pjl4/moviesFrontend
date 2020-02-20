@@ -7,7 +7,7 @@ http://cinopsis.herokuapp.com/api/movies/
 
 ## Description:
 
-The cinopsis movie web application created by Mindy Marmol, Peter Lutz, Ryan Zimmerman, and Suzann Adams is a place where creative storytellers can post a synopsis or short summary of their film ideas for the public to read and rate. This application is a site where an interested audience and potential screen writers can share and provide feedback in the form of rating the synopsis on a scale of 1 to 10 with the top five highest rated films, per genre, listed on the homepage. This site can be the launching pad for writers to eventually write a fully developed movie script that can be proposed to a filmmaker. The frontEnd of this app has eight components, they are: HeaderContainer, Home, Login, Movie, Signup, Submit, User, and ViewAll.
+The Cinopsis movie web application created by Mindy Marmol, Peter Lutz, Ryan Zimmerman, and Suzann Adams is a place where creative storytellers can post a synopsis or short summary of their film ideas for the public to read and rate. This application is a site where an interested audience and potential screen writers can share and provide feedback in the form of rating the synopsis on a scale of 1 to 10 with the top five highest rated films, per genre, listed on the homepage. This site can be the launching pad for writers to eventually write a fully developed movie script that can be proposed to a filmmaker. The frontEnd of this app has eight components, they are: HeaderContainer, Home, Login, Movie, Signup, Submit, User, and ViewAll.
 
 ## Technologies Used:
 
@@ -23,10 +23,10 @@ Contributors can open an issue on this repository at https://github.com/pjl4/boo
 
 ## Problems & Difficulties:
 
-1.It was difficult to get the API to link with the frontend of the app.
-2.Calculating the ratings to have it sync up with the current page was a challenge.
-3.Working on different branches caused some confusion for us when we had to save and merge then get the correct version of our app.
-4.Some fetch calls we made were not initially functioning as we had hoped.
+1. It was difficult to get the API to link with the frontend of the app.
+2. Calculating the ratings to have it sync up with the current page was a challenge.
+3. Working on different branches caused some confusion for us when we had to save and merge then get the correct version of our app.
+4. Some fetch calls we made were not initially functioning as we had hoped.
 
 ## Future Additions:
 
