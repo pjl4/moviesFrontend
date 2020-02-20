@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Website:
 
-## Available Scripts
+https://pjl4.github.io/moviesFrontend/
+http://cinopsis.herokuapp.com/api/movies/
 
-In the project directory, you can run:
+![Screen Shot of cinopsis homepage in here]
 
-### `npm start`
+## Description:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The cinopsis movie web application created by Mindy Marmol, Peter Lutz, Ryan Zimmerman, and Suzann Adams is a place where creative storytellers can post a synopsis or short summary of their film ideas for the public to read and rate. This application is a site where an interested audience and potential screen writers can share and provide feedback in the form of rating the synopsis on a scale of 1 to 10 with the top five highest rated films, per genre, listed on the homepage. This site can be the launching pad for writers to eventually write a fully developed movie script that can be proposed to a filmmaker. The frontEnd of this app has eight components, they are: HeaderContainer, Home, Login, Movie, Signup, Submit, User, and ViewAll.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Technologies Used:
 
-### `npm test`
+The technologies used for cinopsis is React JSX, React Hooks and React Bootstrap and Axios. Flexbos and CSS Grid were also used to style the pages.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started/Installation:
 
-### `npm run build`
+This application can be used by pulling it up on GitHub, forking it to your personal repository, then cloning and copying it into your terminal. The next step is to run npm install to install the required dependencies, then npm run start on your terminal to run the application in the browser. Then click onto the website and enjoy, otherwise you can also pull it up on Heroku. The link is listed again here: http://cinopsis.herokuapp.com/api/movies/
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contribution Guidelines:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Contributors can open an issue on this repository at https://github.com/pjl4/bookFrontend if there are suggestions to improve this application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Problems & Difficulties:
 
-### `npm run eject`
+To be added by Peter and Ryan
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Future Additions:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In the future, we would like to add the feature of allowing a place for the user to provide written feedback to the author of the film, as well as, post an image or illustration that reflects the synopsis of the author's proposed film. Material posted on cinopsis will have copyrights attached to the login user who submitted the story and other legal protections.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Planning & Wireframe:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+https://docs.google.com/document/d/1xQc0bYUmYEHy585N3KAJDiLbhBMxd7uSYZdrD6KwhAA/edit
+![Screen Shot of wireframe in here]
