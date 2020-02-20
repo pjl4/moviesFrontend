@@ -23,20 +23,27 @@ const Movie = props => {
       let bool = localStorage.id && !usersRating;
       setloggedInBool(bool);
       setUsersRating(temp);
-    });
+    })}, [])
 
-    // return function cleanup() {
-    //   movieData
-    // };
-  }, [movieData]);
+	const postRating = () => {
+		const ratingInfo = { rating, createdBy: localStorage.id };
+		axios
+			.post(url + '/rating', ratingInfo)
+			.then((res) => props.history.push(`/movie/${movieData.movie._id}`));
+	};
+	const deleteMovie = () => {
+		axios.delete(url).then((res) => props.history.push('/'));
+	};
 
-  const postRating = () => {
-    const ratingInfo = { rating, createdBy: localStorage.id };
-    axios.post(url + '/rating', ratingInfo);
-  };
-  const deleteMovie = () => {
-    axios.delete(url).then(res => props.history.push('/'));
-  };
+	const editRating = () => {
+		const ratingInfo = { rating, createdBy: localStorage.id };
+		axios
+			.put(
+				`https://cinopsis.herokuapp.com/api/rating/${usersRating._id}`,
+				ratingInfo
+			)
+			.then((res) => props.history.push(`/movie/${movieData.movie._id}`));
+	};
 
   const editRating = () => {
     const ratingInfo = { rating, createdBy: localStorage.id };
