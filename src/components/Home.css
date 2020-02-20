@@ -1,0 +1,30 @@
+.homeMain {
+  height: 100vh;
+  display: flex;
+}
+.sideNote {
+  border-left: 1px solid goldenrod;
+  padding-left: 8%;
+}
+.viewAll {
+  text-decoration: underline;
+}
+
+.viewAll:hover {
+  text-decoration: underline;
+}
+.homeList li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.homeList h3 {
+  color: goldenrod;
+}
+.homeList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, max-content);
+  margin-top: 4%;
+  padding-right: 24%;
+}

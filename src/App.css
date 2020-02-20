@@ -16,38 +16,14 @@ h1,
 h2,
 h3,
 h4 {
-  text-decoration: underline;
   font-family: 'Zilla Slab', serif;
   color: whitesmoke;
 }
-p {
-  color: goldenrod;
-  font-family: 'Zilla Slab', serif;
-}
-.homeList {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(2, max-content);
-  margin-top: 4%;
-}
-.viewAll {
-  text-decoration: underline;
-}
-
-.viewAll:hover {
-  text-decoration: underline;
-}
-ul {
-  list-style: none;
-}
 .appMain {
+  margin-top: 4%;
   padding-left: 8%;
 }
 
-.sideNote {
-  border-left: 1px solid goldenrod;
-  padding-left: 8%;
-}
 .headerButton p {
   padding-left: 1%;
   display: block;
@@ -62,11 +38,6 @@ ul {
   justify-content: space-evenly;
   border-bottom: 0.1rem solid goldenrod;
   padding-top: 4%;
-}
-.homeMain {
-  height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .login-form {

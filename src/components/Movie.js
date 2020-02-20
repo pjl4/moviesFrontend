@@ -109,7 +109,7 @@ const Movie = props => {
                     onClick={evt => {
                       editRating();
                     }}
-                    variant="primary"
+                    variant="warning"
                     type="submit"
                   >
                     Edit Rating
@@ -129,7 +129,9 @@ const Movie = props => {
                 Submit Rating
               </Button>
             )}
-            {!loggedInBool && <p>Log in to rate this movie.</p>}
+            {!loggedInBool && (
+              <p className="notification">Log in to rate this movie.</p>
+            )}
             {localStorage.id === movieData.movie.createdBy && (
               <Button
                 onClick={evt => {
