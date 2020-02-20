@@ -1,0 +1,30 @@
+.movieInfo {
+  margin-top: 4%;
+  padding-right: 44%;
+}
+.movieInfo span {
+  color: grey;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.movieInfo p {
+  margin-top: 8%;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.movieInfo h2 {
+  color: goldenrod;
+  text-decoration: none;
+}
+.movieInfo h6 {
+  color: rgb(169, 165, 165);
+  text-transform: uppercase;
+  /* font-family: 'Zilla Slab', serif; */
+}
+
+.submitRating {
+  display: inline;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Zilla Slab', serif;
+}

@@ -22,15 +22,16 @@ const HeaderContainer = props => {
         )}
         {localStorage.username && (
           <div className="headerButton">
-            <p>Signed in as: {localStorage.username}</p>
             <Button
               href="/moviesFrontend"
               onClick={() => {
                 localStorage.clear();
               }}
+              variant="warning"
             >
               Logout
             </Button>
+            <p>Signed in as: {localStorage.username}</p>
           </div>
         )}
       </nav>
