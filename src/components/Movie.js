@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { withRouter, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import './Movie.css';
 const axios = require('axios');
 
@@ -15,6 +15,7 @@ const Movie = props => {
   const [loggedInBool, setloggedInBool] = useState();
 
   useEffect(() => {
+    console.log('props', props.match.params.id)
     axios.get(url).then(res => {
       setMovieData(res.data);
       let temp = res.data.movie.ratings.find(
@@ -156,4 +157,4 @@ const Movie = props => {
   );
 };
 
-export default withRouter(Movie);
+export default Movie;

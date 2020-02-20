@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -61,9 +61,9 @@ const Login = (props) => {
 					>
 						LOGIN
 					</Button>
-					<Link to="/signup">
+					<a href="/signup">
 						<Button className='signButton' variant="secondary">SIGN UP</Button>
-					</Link>
+					</a>
 					{error && <h3 style={{ color: 'red' }}>{error}</h3>}
 				</div>
 			</Form>
@@ -71,4 +71,4 @@ const Login = (props) => {
 	);
 };
 
-export default withRouter(Login);
+export default Login;

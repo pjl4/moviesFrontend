@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
@@ -76,4 +76,4 @@ const Login = (props) => {
 	);
 };
 
-export default withRouter(Login);
+export default Login;
