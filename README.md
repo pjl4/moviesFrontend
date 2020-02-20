@@ -23,7 +23,10 @@ Contributors can open an issue on this repository at https://github.com/pjl4/boo
 
 ## Problems & Difficulties:
 
-To be added by Peter and Ryan
+1.It was difficult to get the API to link with the frontend of the app.
+2.Calculating the ratings to have it sync up with the current page was a challenge.
+3.Working on different branches caused some confusion for us when we had to save and merge then get the correct version of our app.
+4.Some fetch calls we made were not initially functioning as we had hoped.
 
 ## Future Additions:
 
@@ -32,7 +35,6 @@ In the future, we would like to add the feature of allowing a place for the user
 ## Planning & Wireframe:
 
 https://docs.google.com/document/d/1xQc0bYUmYEHy585N3KAJDiLbhBMxd7uSYZdrD6KwhAA/edit
-![Screen Shot of wireframe in here]
 
 <img width="1208" alt="Screen Shot 2020-02-20 at 7 29 44 AM" src="https://user-images.githubusercontent.com/58324606/74949639-dfaa8580-53b2-11ea-9e95-f10adc9729cd.png">
 
