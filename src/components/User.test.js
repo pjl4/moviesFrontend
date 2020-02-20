@@ -1,7 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import User from './User';
-import { Item } from 'react-bootstrap/lib/Pagination';
 
 describe('User component', () => {
   let wrapper;
@@ -19,6 +18,6 @@ describe('User component', () => {
     );
   });
   it('should render as expected', () => {
-    expect(wrapper.find('h2').text()).toEqual('peter');
+    expect(wrapper.find('.userInfo')).not.toBeNull();
   });
 });
