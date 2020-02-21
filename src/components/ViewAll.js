@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './ViewAll.css';
+import star from '../star.png';
 
 const axios = require('axios');
 const ViewAll = props => {
@@ -19,7 +20,7 @@ const ViewAll = props => {
   return (
     <div>
       <ul className="allMovies">
-        <h2>{props.match.params.genre}</h2>
+        <h2>All {props.match.params.genre} Submissions</h2>
         {movieList.map(movie => {
           //map through movieList variable to render links for each movie pertaining to the provided genre
           return (

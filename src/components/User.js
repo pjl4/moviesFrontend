@@ -24,7 +24,7 @@ const User = props => {
       {userData && (
         <>
           <ul>
-            <h2>{userData.user.userName}</h2>
+            <h2>{userData.user.userName}'s Submissions:</h2>
             {userData.movies.map((movie, index) => {
               //map through user data movies in order to link to the individual movies
               return (

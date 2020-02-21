@@ -53,6 +53,9 @@ span {
    margin: auto;
    width: 24%;
 }
+/* .ratingViewAll {
+       font-
+    } */
 
 @media (max-width: 600px) {
 
@@ -95,6 +98,7 @@ span {
     .login-form {
       width: 80vw;
     }  
+    
 
   body {
     height: 100%;
