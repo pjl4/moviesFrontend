@@ -19,6 +19,11 @@ const Home = props => {
       setRandomMovie(_.sample(res.data));
       setAllMovies(res.data);
     })
+
+    return function cleanup() {
+      setAllMovies([]);
+      setRandomMovie();
+    }
     
   }, []);
 
@@ -40,6 +45,7 @@ const Home = props => {
     }
     return bullets;
   };
+
   const addViewAll = genre => {
     return (
       <Link key={genre} className="viewAll" to={`genre/${genre}`}>
@@ -48,9 +54,7 @@ const Home = props => {
     );
   };
 
-  // const getLastMovie = () => {
-  //   console.log(allMovies[allMovies.length-1])
-  // }
+
   return (
     <>
       <main className="homeMain"><div>

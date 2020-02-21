@@ -20,10 +20,18 @@ const Movie = props => {
          let bool = localStorage.id && !usersRating;
          setloggedInBool(bool);
          setUsersRating(temp);
+
+         return function cleanup() {
+           temp = null;
+           bool = null;
+           setMovieData({});
+           setRating(0);
+           setUsersRating({});
+           setloggedInBool(false);
+           
+         }
       });
-      // return function cleanup() {
-      //   movieData
-      // };
+      
    }, [movieData]);
    const postRating = () => {
       const ratingInfo = { rating, createdBy: localStorage.id };

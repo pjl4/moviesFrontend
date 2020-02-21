@@ -5,11 +5,18 @@ import './ViewAll.css';
 
 const axios = require('axios');
 const ViewAll = props => {
+
   const url = `https://cinopsis.herokuapp.com/api/movies/?genre=${props.match.params.genre}`;
   const [movieList, setMovieList] = useState([]);
+
   useEffect(() => {
     axios.get(url).then(res => setMovieList(res.data));
+
+    return function cleanup() {
+      setMovieList([]);
+    }
   }, [url]);
+  
   return (
     <div>
       <ul className="allMovies">

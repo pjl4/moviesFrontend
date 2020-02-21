@@ -11,6 +11,10 @@ const User = props => {
     axios.get(url).then(res => {
       setUserData(res.data);
     });
+
+    return function cleanup() {
+      setUserData();
+    }
   }, [url]);
 
   return (
