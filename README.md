@@ -8,7 +8,7 @@ http://cinopsis.herokuapp.com/api/movies/
 
 ## Description:
 
-The Cinopsis movie web application created by Mindy Marmol, Peter Lutz, Ryan Zimmerman, and Suzann Adams is a place where creative storytellers can post a synopsis or short summary of their film idea for the public to read and rate. This application is a site where an interested public audience and potential or current screen writers can share and provide feedback in the form of rating the synopsis on a scale of 1 to 10 with the top five highest rated films, per genre, listed on the homepage. This site can be the launching pad for writers to eventually write a fully developed movie script that can be proposed to a filmmaker. The frontEnd of this app has nine components, they are: App, HeaderContainer, Home, Login, Movie, Signup, Submit, User, and ViewAll.
+The Cinopsis movie web application created by Mindy Marmol, Peter Lutz, Ryan Zimmerman, and Suzann Adams is a place where creative storytellers can post a synopsis or short summary of their film idea for the public to read and rate. This application is a site where an interested public audience and potential or current screen writers can share, provide and receive feedback by rating the synopsis of the film on a scale of 1 to 10. The top five highest rated films, per genre, will be listed on the homepage. This site can be the launching pad for writers to eventually write a fully developed movie script that can be proposed to a filmmaker. The frontEnd of this app has nine components, they are: App, HeaderContainer, Home, Login, Movie, Signup, Submit, User, and ViewAll.
 
 ## Technologies Used:
 
