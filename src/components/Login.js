@@ -65,14 +65,11 @@ const Login = (props) => {
                >
                   LOGIN
                </Button>
-
-               <Button
-                  href='/moviesFrontend/signup'
-                  className='signButton'
-                  variant='secondary'
-               >
-                  SIGN UP
-               </Button>
+               <Link to='/signup'>
+                  <Button className='signButton' variant='secondary'>
+                     SIGN UP
+                  </Button>
+               </Link>
 
                {error && <h3 style={{ color: 'red' }}>{error}</h3>}
             </div>
