@@ -51,7 +51,7 @@ const Movie = props => {
       <div className='movieInfo'>
          {movieData && (
             <>
-               <h2> {movieData.movie.title}</h2>
+               <h1> {movieData.movie.title}</h1>
                <h6>
                   author:
                   <Link to={`/user/${movieData._id}`}>

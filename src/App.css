@@ -55,6 +55,10 @@ span {
 }
 
 @media (max-width: 600px) {
+
+   .logo {
+      max-width: 60vw;
+   }
    .synopsis-submit {
       width: 100%;
    }
@@ -92,10 +96,16 @@ span {
       width: 80vw;
     }  
 
-  .body {
+  body {
     height: 100%;
     background-position: center;
     background-size: cover;
+    font-size: .9em;
+    background-color: #222121;
+  }
+
+  .appMain {
+   padding-left: 1.5em;
   }
    /* nav-bar should become a dropdown */
 }
