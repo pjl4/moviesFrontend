@@ -57,7 +57,7 @@ const Movie = props => {
                      Math.abs(movieData.movie.avgRating)}
                   {!movieData.movie.ratings.length > 0 && 'No ratings yet!'}
                </h6>
-               <h6>Synopsis</h6>
+               <h6>Synopsis:</h6>
                <p>{movieData.movie.synopsis}</p>
                <Form>
                   {loggedInBool && (
