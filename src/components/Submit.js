@@ -11,6 +11,7 @@ const Create = props => {
   const [genre, setGenre] = useState('Horror');
 
   const postMovie = () => {
+    //set the user input to a movie object to post to Api
     const newMovie = {
       title,
       synopsis: plot,
@@ -21,6 +22,7 @@ const Create = props => {
     axios
       .post('https://cinopsis.herokuapp.com/api/movies', newMovie)
       .then(res => {
+        //redirect the user to homepage upon movie submission
         props.history.push('/');
       })
       .catch(err => console.log(err));
