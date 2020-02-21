@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/moviesFrontend/static/css/main.024497c7.chunk.css",
-    "main.js": "/moviesFrontend/static/js/main.98724a2a.chunk.js",
-    "main.js.map": "/moviesFrontend/static/js/main.98724a2a.chunk.js.map",
+    "main.css": "/moviesFrontend/static/css/main.e51f3bbb.chunk.css",
+    "main.js": "/moviesFrontend/static/js/main.b6349986.chunk.js",
+    "main.js.map": "/moviesFrontend/static/js/main.b6349986.chunk.js.map",
     "runtime-main.js": "/moviesFrontend/static/js/runtime-main.2be68c7b.js",
     "runtime-main.js.map": "/moviesFrontend/static/js/runtime-main.2be68c7b.js.map",
     "static/css/2.47e06e2e.chunk.css": "/moviesFrontend/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.d3acbd89.chunk.js": "/moviesFrontend/static/js/2.d3acbd89.chunk.js",
-    "static/js/2.d3acbd89.chunk.js.map": "/moviesFrontend/static/js/2.d3acbd89.chunk.js.map",
+    "static/js/2.94e7674f.chunk.js": "/moviesFrontend/static/js/2.94e7674f.chunk.js",
+    "static/js/2.94e7674f.chunk.js.map": "/moviesFrontend/static/js/2.94e7674f.chunk.js.map",
     "index.html": "/moviesFrontend/index.html",
-    "precache-manifest.27f4d36ce7133ad49e9f148f836db0e8.js": "/moviesFrontend/precache-manifest.27f4d36ce7133ad49e9f148f836db0e8.js",
+    "precache-manifest.b5f785bf1269c5ae91797e3774f97611.js": "/moviesFrontend/precache-manifest.b5f785bf1269c5ae91797e3774f97611.js",
     "service-worker.js": "/moviesFrontend/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/moviesFrontend/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.024497c7.chunk.css.map": "/moviesFrontend/static/css/main.024497c7.chunk.css.map",
-    "static/js/2.d3acbd89.chunk.js.LICENSE.txt": "/moviesFrontend/static/js/2.d3acbd89.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/moviesFrontend/static/media/logo.563dbecd.svg"
+    "static/css/main.e51f3bbb.chunk.css.map": "/moviesFrontend/static/css/main.e51f3bbb.chunk.css.map",
+    "static/js/2.94e7674f.chunk.js.LICENSE.txt": "/moviesFrontend/static/js/2.94e7674f.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/moviesFrontend/static/media/logo.563dbecd.svg",
+    "static/media/star.png": "/moviesFrontend/static/media/star.10d91d23.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2be68c7b.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.d3acbd89.chunk.js",
-    "static/css/main.024497c7.chunk.css",
-    "static/js/main.98724a2a.chunk.js"
+    "static/js/2.94e7674f.chunk.js",
+    "static/css/main.e51f3bbb.chunk.css",
+    "static/js/main.b6349986.chunk.js"
   ]
 }
