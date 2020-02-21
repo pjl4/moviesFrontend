@@ -6,32 +6,30 @@ import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 const axios = require('axios');
 
-const Login = (props) => {
-	const [email, setEmail] = useState('');
-	const [password, setPassword] = useState('');
-	const [error, setError] = useState('');
+const Login = props => {
+   const [email, setEmail] = useState('');
+   const [password, setPassword] = useState('');
+   const [error, setError] = useState('');
 
-	const getInfoAndValidate = () => {
-		const info = { email, password };
+   const getInfoAndValidate = () => {
+      const info = { email, password };
 
-		axios
-			.post('https://cinopsis.herokuapp.com/api/user/login', info)
-			.then((res) => {
-				if (res.data.error) {
-					setError(res.data.error);
-				} else {
-					localStorage.setItem('id', res.data._id);
-					localStorage.setItem('username', res.data.userName);
-					props.history.push('/');
-					window.location.reload();
-				}
-			})
-			.catch((err) => console.log(err));
+      axios
+         .post('https://cinopsis.herokuapp.com/api/user/login', info)
+         .then(res => {
+            if (res.data.error) {
+               setError(res.data.error);
+            } else {
+               localStorage.setItem('id', res.data._id);
+               localStorage.setItem('username', res.data.userName);
+               props.history.push('/');
+               window.location.reload();
+            }
+         })
+         .catch(err => console.log(err));
+   };
 
-		
-	};
-
-	return (
+   return (
       <div>
          <Form className='login-form'>
             <Form.Group

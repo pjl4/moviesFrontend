@@ -8,53 +8,53 @@ import Row from 'react-bootstrap/Container';
 import './HeaderContainer.css';
 
 const HeaderContainer = props => {
-  return (
-    <div>
-      <Navbar className="nav-bar">
-        <img className="logo" src={logo} alt="logo" />
-        <Container></Container>
-        <Container>
-          <div className="headRow"></div>
-          <Link to="/">
-            <h3 className="homeHead">Home </h3>
-          </Link>
-          {localStorage.id && (
-            <Link to="/new">
-              <h3 className="submitHead">Submit</h3>
-            </Link>
-          )}
+   return (
+      <div>
+         <Navbar className='nav-bar'>
+            <img className='logo' src={logo} alt='logo' />
+            <Container></Container>
+            <Container>
+               <div className='headRow'></div>
+               <Link to='/'>
+                  <h3 className='homeHead'>Home </h3>
+               </Link>
+               {localStorage.id && (
+                  <Link to='/new'>
+                     <h3 className='submitHead'>Submit</h3>
+                  </Link>
+               )}
 
-          {!localStorage.id && (
-            <Link to="/login">
-              <h3 className="loginHead">Log in</h3>
-            </Link>
-          )}
+               {!localStorage.id && (
+                  <Link to='/login'>
+                     <h3 className='loginHead'>Log in</h3>
+                  </Link>
+               )}
 
-          {localStorage.id && (
-            <h3 className="hiHead">
-              Hi,{' '}
-              <Link to={`/user/${localStorage.id}`}>
-                {localStorage.username}
-              </Link>
-              !
-            </h3>
-          )}
-          {!localStorage.id && <div></div>}
-          {localStorage.username && (
-            <Button
-              href="/moviesFrontend"
-              onClick={() => {
-                localStorage.clear();
-              }}
-              variant="warning"
-            >
-              <span className='logout'>LOGOUT</span>
-            </Button>
-          )}
-        </Container>
-      </Navbar>
-    </div>
-  );
+               {localStorage.id && (
+                  <h3 className='hiHead'>
+                     Hi,{' '}
+                     <Link to={`/user/${localStorage.id}`}>
+                        {localStorage.username}
+                     </Link>
+                     !
+                  </h3>
+               )}
+               {!localStorage.id && <div></div>}
+               {localStorage.username && (
+                  <Button
+                     href='/moviesFrontend'
+                     onClick={() => {
+                        localStorage.clear();
+                     }}
+                     variant='warning'
+                  >
+                     <span className='logout'>LOGOUT</span>
+                  </Button>
+               )}
+            </Container>
+         </Navbar>
+      </div>
+   );
 };
 
 export default HeaderContainer;

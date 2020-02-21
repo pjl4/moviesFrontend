@@ -15,7 +15,6 @@ const Home = props => {
   //getting and setting all movies
   useEffect(() => {
     axios.get(url).then(res => {
-      console.log(res.data)
       setRandomMovie(_.sample(res.data));
       setAllMovies(res.data);
     })
