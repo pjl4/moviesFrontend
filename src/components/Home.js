@@ -39,7 +39,7 @@ const Home = props => {
         </Link>
       );
     });
-    //Check to see if the length of bullets variable is equal to or greater than zero
+    //Check to see if the length of bullets variable is equal to or greater than five
     if (bullets.length >= 5) {
       const ViewAll = addViewAll(genre);
       bullets.push(ViewAll);
