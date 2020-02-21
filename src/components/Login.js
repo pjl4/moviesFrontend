@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -38,7 +38,7 @@ const Login = (props) => {
 					onChange={(evt) => setEmail(evt.target.value)}
 					controlId="formBasicEmail"
 				>
-					<Form.Label>Email address</Form.Label>
+					<Form.Label><span>Email:</span></Form.Label>
 					<Form.Control type="email" placeholder="Enter email" />
 					<Form.Text className="text-muted"></Form.Text>
 				</Form.Group>
@@ -47,28 +47,28 @@ const Login = (props) => {
 					onChange={(evt) => setPassword(evt.target.value)}
 					controlId="formBasicPassword"
 				>
-					<Form.Label>Password</Form.Label>
-					<Form.Control type="password" placeholder="Password" />
+					<Form.Label><span>Password:</span></Form.Label>
+					<Form.Control type="password" placeholder="Enter password" />
 				</Form.Group>
-				<Container>
+				<div className='loginButtons'>
 					<Button
 						onClick={(evt) => {
 							evt.preventDefault();
 							getInfoAndValidate();
 						}}
-						variant="primary"
+						variant="warning"
 						type="submit"
 					>
-						Submit
+						LOGIN
 					</Button>
-					<Link to="/signup">
-						<Button variant="dark">Sign Up</Button>
-					</Link>
+					<a href="/signup">
+						<Button className='signButton' variant="secondary">SIGN UP</Button>
+					</a>
 					{error && <h3 style={{ color: 'red' }}>{error}</h3>}
-				</Container>
+				</div>
 			</Form>
 		</div>
 	);
 };
 
-export default withRouter(Login);
+export default Login;

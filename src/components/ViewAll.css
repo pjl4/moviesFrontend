@@ -1,0 +1,11 @@
+.allMovies li {
+  list-style: none;
+  text-transform: uppercase;
+}
+.viewAll {
+  text-transform: uppercase;
+}
+
+.allMovies h2 {
+  color: goldenrod;
+}
