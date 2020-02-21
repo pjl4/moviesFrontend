@@ -35,8 +35,6 @@ In the future, we would like to add the feature of allowing a place for the user
 
 ## Planning & Wireframe:
 
-https://docs.google.com/document/d/1xQc0bYUmYEHy585N3KAJDiLbhBMxd7uSYZdrD6KwhAA/edit
-
 <img width="1208" alt="Screen Shot 2020-02-20 at 7 29 44 AM" src="https://user-images.githubusercontent.com/58324606/74949639-dfaa8580-53b2-11ea-9e95-f10adc9729cd.png">
 
 <img width="1284" alt="Screen Shot 2020-02-20 at 7 27 33 AM" src="https://user-images.githubusercontent.com/58324606/74949627-db7e6800-53b2-11ea-8c4a-6703982854d4.png">
