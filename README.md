@@ -1,13 +1,14 @@
 # Website:
 
 https://pjl4.github.io/moviesFrontend/
+
 http://cinopsis.herokuapp.com/api/movies/
 
 <img width="1422" alt="Screen Shot 2020-02-20 at 8 07 13 PM" src="https://user-images.githubusercontent.com/58324606/75003460-aa3a8200-541c-11ea-922b-510fe43a06c0.png">
 
 ## Description:
 
-The Cinopsis movie web application created by Mindy Marmol, Peter Lutz, Ryan Zimmerman, and Suzann Adams is a place where creative storytellers can post a synopsis or short summary of their film idea for the public to read and rate. This application is a site where an interested audience and potential screen writers can share and provide feedback in the form of rating the synopsis on a scale of 1 to 10 with the top five highest rated films, per genre, listed on the homepage. This site can be the launching pad for writers to eventually write a fully developed movie script that can be proposed to a filmmaker. The frontEnd of this app has nine components, they are: App, HeaderContainer, Home, Login, Movie, Signup, Submit, User, and ViewAll.
+The Cinopsis movie web application created by Mindy Marmol, Peter Lutz, Ryan Zimmerman, and Suzann Adams is a place where creative storytellers can post a synopsis or short summary of their film idea for the public to read and rate. This application is a site where an interested public audience and potential or current screen writers can share and provide feedback in the form of rating the synopsis on a scale of 1 to 10 with the top five highest rated films, per genre, listed on the homepage. This site can be the launching pad for writers to eventually write a fully developed movie script that can be proposed to a filmmaker. The frontEnd of this app has nine components, they are: App, HeaderContainer, Home, Login, Movie, Signup, Submit, User, and ViewAll.
 
 ## Technologies Used:
 
